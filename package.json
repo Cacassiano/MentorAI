@@ -1,0 +1,28 @@
+{
+  "name": "mvp-maratona",
+  "version": "1.0.0",
+  "description": "Uma aplicação que vai usar mecanismos de IA para ajudar usuários a irem melhor em concursos",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cacassiano/MentorAI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cacassiano/MentorAI/issues"
+  },
+  "homepage": "https://github.com/Cacassiano/MentorAI#readme",
+  "dependencies": {
+    "@google/genai": "^1.11.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
