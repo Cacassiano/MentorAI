@@ -161,3 +161,5 @@ Sugestões do que fazer em cada sessão
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);
 });
+
+module.exports = app;
