@@ -19,6 +19,8 @@
   "homepage": "https://github.com/Cacassiano/MentorAI#readme",
   "dependencies": {
     "@google/genai": "^1.11.0",
+    "@google/generative-ai": "^0.24.1",
+    "body-parser": "^2.2.0",
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
     "ejs": "^3.1.10",

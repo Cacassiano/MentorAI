@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planejador de Estudos ENEM 2025</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Planejador de Estudos ENEM 2025</h1>
+        <p>Preencha o formulário para receber um plano de estudos personalizado com base no Google Gemini</p>
+        
+        <form action="/generate-plan" method="POST">
+            <div class="form-group">
+                <label for="studyTime">Tempo diário disponível para estudo:</label>
+                <select id="studyTime" name="studyTime" required>
+                    <option value="">Selecione...</option>
+                    <option value="1 hora">1 hora</option>
+                    <option value="2 horas" selected>2 horas</option>
+                    <option value="3 horas">3 horas</option>
+                    <option value="4 horas">4 horas</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="selfLearningHistory">Histórico com autodidatismo:</label>
+                <select id="selfLearningHistory" name="selfLearningHistory" required>
+                    <option value="">Selecione...</option>
+                    <option value="Não tem histórico com autodidatismo" selected>Não tenho experiência</option>
+                    <option value="Tem algum histórico com autodidatismo">Tenho alguma experiência</option>
+                    <option value="Tem bastante experiência com autodidatismo">Tenho bastante experiência</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="learningStyle">Aprende melhor:</label>
+                <select id="learningStyle" name="learningStyle" required>
+                    <option value="">Selecione...</option>
+                    <option value="assistindo videoaulas">Assistindo videoaulas</option>
+                    <option value="lendo livros e resumos">Lendo livros e resumos</option>
+                    <option value="fazendo exercícios" selected>Fazendo exercícios</option>
+                    <option value="discutindo em grupo">Discutindo em grupo</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="difficulties">Matérias com dificuldade (separadas por vírgula):</label>
+                <input type="text" id="difficulties" name="difficulties" value="redação e matemática" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="affinities">Matérias com afinidade (separadas por vírgula):</label>
+                <input type="text" id="affinities" name="affinities" value="física e química" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="bestTime">Melhor horário para estudar:</label>
+                <select id="bestTime" name="bestTime" required>
+                    <option value="">Selecione...</option>
+                    <option value="manhã" selected>Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="targetScore">Nota alvo no ENEM:</label>
+                <input type="text" id="targetScore" name="targetScore" value="acima de 800" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="methodologyDifficulties">Dificuldades com metodologias de estudo:</label>
+                <input type="text" id="methodologyDifficulties" name="methodologyDifficulties" value="nenhuma a princípio" required>
+            </div>
+            
+            <button type="submit">Gerar Plano de Estudos</button>
+        </form>
+    </div>
+</body>
+</html>
